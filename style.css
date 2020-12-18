@@ -30,7 +30,7 @@ a {
 
 /* About */
 .about {
-  text-align: center;
+  text-align: start;
 }
 
 .info-wrapper {
@@ -41,7 +41,7 @@ a {
 .info-wrapper::after {
   content: '';
   position: absolute;
-  left: calc(50% - 4rem);
+  /* left: calc(50% - 4rem); */
   bottom: -10px;
   height: 1px;
   background-color: #b73dfd;
@@ -305,6 +305,11 @@ svg {
     margin: 0;
     flex-direction: column;
     width: 90vw;
+    text-align: center;
+  }
+
+  .info-wrapper::after {
+    left: calc(50% - 4rem);
   }
 
   .svg {
